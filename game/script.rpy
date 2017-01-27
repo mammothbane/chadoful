@@ -155,7 +155,33 @@ label boardGamesNap:
     scene bg knowledge with fade # common room
     # more scene intro?
 
-    "So I guess these are the people I'll be living with this year."
+    ### Everyone will need board game playing poses
+
+    show nico at left_offset with dissolve
+    nico "Why don't we start with Deception?"
+    nico "Ariel, can you hand out murder weapons? Garrick, could you do evidence?"
+    hide nico with dissolve
+
+    "..."
+
+    "Forensic Scientist" "Everyone, heads down."
+    "Forensic Scientist" "Murderer, point to your weapon and evidence."
+    "Forensic Scientist" "Murderer, head down."
+    "Forensic Scientist" "Everyone, heads up."
+
+    show garrick at right_offset with dissolve
+    garrick "LET ME SOLVE THE CRIME!"
+    # sound: nathan -- WAIT FOR MORE INFORMATION (muffled)
+    hide garrick with dissolve
+
+    "..."
+
+    ##
+
+    show player normal at center_vert with dissolve
+    player "\[So I guess these are the people I'll be living with this year.\]"
+    hide player with dissolve
+
     show nico normal at center_vert with dissolve
     "There's Nico. Is he really always this talkative?"
     hide nico with dissolve
@@ -184,7 +210,6 @@ label boardGamesNap:
 
     show dh normal at center_vert with dissolve
     "DH..."
-
     hide dh with dissolve
 
     "But I thought there was one more person in this house..."
@@ -192,7 +217,12 @@ label boardGamesNap:
     $ renpy.pause(1)
 
     # knock at the door
+    jacq "I'll get it!"
     # crashbar sounds
 
     show nathan normal at center_vert with dissolve
-    "Nathan's swipe doesn't work. He technically doesn't live here, but I can turn a blind eye."
+    jacq "Nathan's swipe doesn't work. He technically doesn't live here."
+    player "I can turn a blind eye."
+    hide nathan normal with dissolve
+
+    
