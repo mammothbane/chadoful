@@ -22,6 +22,7 @@ init:
     image player normal = 'player.png'
 
     image bg death = 'you_died.png'
+    image bg black = 'black_screen.png'
     image bg knowledge = 'knowledge_is_power.jpg'
 
     $ left_offset = Position(xpos=0.1, xanchor=0, ypos=0.5, yanchor=0.5)
@@ -42,8 +43,8 @@ label start:
     dh 'we lost'
 
     scene bg death with fade
-    $ renpy.pause(5)
+    $ renpy.pause(3)
 
-    hide bg with fade
+    show bg black with fade
 
     return
