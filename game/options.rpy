@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.1.0"
 
 
 ## Text that is placed on the game's about screen. To insert a blank line
@@ -36,7 +36,7 @@ define gui.about = _("")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "ChadofulBoif"
+define build.name = "ChadBoif"
 
 
 ## Sounds and music ############################################################
@@ -176,6 +176,7 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**/.git', None)
 
     ## To archive files, classify them as 'archive'.
 
@@ -193,9 +194,3 @@ init python:
 ## Play developer console.
 
 # define build.google_play_key = "..."
-
-
-## The username and project name associated with an itch.io project, separated
-## by a slash.
-
-# define build.itch_project = "renpytom/test-project"

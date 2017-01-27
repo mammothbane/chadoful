@@ -28,6 +28,8 @@ init:
     $ left_offset = Position(xpos=0.1, xanchor=0, ypos=0.5, yanchor=0.5)
     $ right_offset = Position(xpos=0.9, xanchor=0.999, ypos=0.5, yanchor=0.5)
 
+init offset = 100
+
 label start:
     scene bg knowledge
 
